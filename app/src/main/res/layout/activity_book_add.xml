@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookADD">
+
+    <TextView
+        android:id="@+id/txtAddBooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Register"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="60dp"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="50dp" />
+
+
+    <TextView
+        android:id="@+id/txtBookId"
+        android:text="BookID"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtAddBooks"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="48dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="normal"/>
+
+    <EditText
+        android:id="@+id/txtEditBID"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAddBooks"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:id="@+id/txtBookName"
+        android:text="Book Name"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtBookId"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="normal"/>
+
+    <EditText
+        android:id="@+id/txtEditBname"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_below="@+id/txtEditBID"
+        android:layout_marginLeft="170dp"
+        android:layout_marginRight="30dp"
+
+        />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:text="Price"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtBookName"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="normal"/>
+
+    <EditText
+        android:id="@+id/txtEditPrice"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_below="@+id/txtEditBname"
+        android:layout_marginLeft="170dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <TextView
+        android:id="@+id/txtAuthor"
+        android:text="Author"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtPrice"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="normal"/>
+
+    <EditText
+        android:id="@+id/txtEditAuthor"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEditPrice"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+         />
+
+
+
+    <TextView
+        android:id="@+id/lblcat"
+        android:text="Catogery"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtAuthor"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="normal"/>
+    <Spinner
+        android:id="@+id/category"
+        android:layout_width="192dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtEditAuthor"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:entries="@array/cat"/>
+    <TextView
+        android:id="@+id/lblbranc"
+        android:text="Branch"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/lblcat"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="normal"/>
+    <Spinner
+        android:id="@+id/txtbranch"
+        android:layout_width="192dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/category"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:entries="@array/branch"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/txtbranch"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="100dp"
+        android:backgroundTint="#cbc6ff"
+        android:text="ADD"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/btnAdd"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#cbc6ff"
+        android:text="UPDATE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/btnUpdate"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#cbc6ff"
+        android:text="DELETE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

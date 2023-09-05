@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@drawable/imge4">
+
+    <Spinner
+        android:id="@+id/usertype1"
+        android:layout_width="280dp"
+        android:layout_height="150px"
+        android:entries="@array/user_types"
+
+        android:layout_marginLeft="55dp"
+        android:layout_below="@+id/lblsignin1"
+        android:layout_marginTop="75dp"/>
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="57dp"
+        android:layout_below="@+id/lblsignin1"
+        android:layout_marginTop="30dp"
+        android:text="USER TYPE"
+        android:textColor="#C50B4A"/>
+
+    <EditText
+        android:id="@+id/txtpw1"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:padding="22dp"
+        android:layout_below="@+id/txtus1"
+        android:layout_marginTop="35dp"
+        android:textColorHint="#CA5454"
+        android:textColor="#A213D6"
+        android:text="PASSWORD"
+        android:layout_marginLeft="55dp"
+
+        />
+    <EditText
+        android:id="@+id/txtus1"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="22dp"
+        android:layout_below="@+id/txtid"
+        android:layout_marginTop="35dp"
+        android:textColorHint="#CA5454"
+        android:textColor="#BA0E48"
+        android:text="USER NAME"
+        android:layout_marginLeft="55dp"
+
+        />
+    <EditText
+        android:id="@+id/txtid"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="22dp"
+        android:layout_below="@+id/usertype1"
+        android:layout_marginTop="35dp"
+        android:textColorHint="#CA5454"
+        android:textColor="#BD104B"
+        android:text="USER ID"
+        android:layout_marginLeft="55dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/lblsignin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        android:textColor="#BA0606"
+        />
+
+    <Button
+        android:id="@+id/sing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="20dp"
+        android:layout_marginTop="650dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+</RelativeLayout>

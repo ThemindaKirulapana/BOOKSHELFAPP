@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book id"
+            android:textSize="25dp"
+            android:textDirection="firstStrong"
+            android:id="@+id/lblid1"
+
+            />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="25dp"
+            android:textDirection="firstStrong"
+            android:id="@+id/tct1"
+            android:layout_marginLeft="150dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book name"
+            android:textSize="25dp"
+            android:textDirection="firstStrong"
+            android:id="@+id/lblid2"
+            android:layout_below="@+id/lblid1"
+            android:layout_marginTop="5dp"
+
+            />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="25dp"
+            android:textDirection="firstStrong"
+            android:layout_below="@+id/tct1"
+            android:id="@+id/tct2"
+            android:layout_marginLeft="150dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book price"
+            android:textSize="25dp"
+            android:textDirection="firstStrong"
+            android:id="@+id/lblid3"
+            android:layout_below="@+id/lblid2"
+            android:layout_marginTop="5dp"
+
+            />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="25dp"
+            android:textDirection="firstStrong"
+            android:layout_below="@+id/tct2"
+            android:id="@+id/tct3"
+            android:layout_marginLeft="150dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book author"
+            android:textSize="25dp"
+            android:textDirection="firstStrong"
+            android:id="@+id/lblid4"
+            android:layout_below="@+id/lblid3"
+            android:layout_marginTop="5dp"
+
+            />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="25dp"
+            android:textDirection="firstStrong"
+            android:layout_below="@+id/tct3"
+            android:id="@+id/tct4"
+            android:layout_marginLeft="150dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Catogery"
+            android:textSize="25dp"
+            android:textDirection="firstStrong"
+            android:id="@+id/lblid5"
+            android:layout_below="@+id/lblid4"
+            android:layout_marginTop="5dp"
+
+            />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            android:textDirection="firstStrong"
+            android:layout_below="@+id/tct4"
+            android:id="@+id/tct5"
+            android:layout_marginLeft="150dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brach"
+            android:textSize="25dp"
+            android:textDirection="firstStrong"
+            android:id="@+id/lblid6"
+            android:layout_below="@+id/lblid5"
+            android:layout_marginTop="5dp"
+
+            />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+
+            android:textSize="25dp"
+            android:textDirection="firstStrong"
+            android:layout_below="@+id/tct5"
+            android:id="@+id/tct6"
+            android:layout_marginLeft="150dp"/>
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

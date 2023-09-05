@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/imge4">
+
+
+    <TextView
+        android:id="@+id/txtDontHaveAcc"
+        android:layout_width="309dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/log"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="50dp"
+        android:text="Don't Have An Account?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="normal" />
+
+    <Spinner
+        android:id="@+id/usertype"
+        android:layout_width="280dp"
+        android:layout_height="150px"
+        android:entries="@array/user_types"
+
+        android:layout_marginLeft="55dp"
+        android:layout_below="@+id/lblsignin"
+        android:layout_marginTop="75dp"/>
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="57dp"
+        android:layout_below="@+id/lblsignin"
+        android:layout_marginTop="30dp"
+        android:text="USER TYPE"/>
+
+    <EditText
+        android:id="@+id/txtpw"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:padding="22dp"
+        android:layout_below="@+id/txtus"
+        android:layout_marginTop="35dp"
+        android:textColorHint="#CA5454"
+        android:textColor="#E91E63"
+        android:text="PASSWORD"
+        android:layout_marginLeft="55dp"
+
+        />
+    <EditText
+        android:id="@+id/txtus"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="22dp"
+        android:layout_below="@+id/usertype"
+        android:layout_marginTop="35dp"
+        android:textColorHint="#CA5454"
+        android:textColor="#E91E63"
+        android:text="USER NAME"
+        android:layout_marginLeft="55dp"
+
+        />
+
+    <TextView
+        android:id="@+id/lblsignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOG IN"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:layout_marginTop="120dp"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textSize="20dp"
+        android:backgroundTint="#8A80F1"
+
+        android:layout_marginTop="550dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/Reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textSize="20dp"
+        android:layout_below="@+id/txtDontHaveAcc"
+        android:backgroundTint="#796FEA"
+        android:onClick="sign"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
